@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Port polio</title>
+    <!-- font family style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- font family style -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./../css/port.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link type="https://cdn-icons-png.freepik.com/256/3476/3476457.png?semt=ais_hybrid" rel="icon"
+        href="https://cdn-icons-png.freepik.com/256/3476/3476457.png?semt=ais_hybrid" />
+
+</head>
+
+<body>
+
+    <div class="dark2" id="dark-mode2">
+        <a onclick="my_Function()">
+            <img onclick="toggleBorderColor2()" class="dark-icon2" src="./../assest/dark-mode.png">
+        </a>
+    </div>
+
+    <div class="contact-contenair">
+        <div>
+            <nav class="navigation-bar" id="box">
+                <a href="home.html" target="_self" class="home" id="home">Home</a>
+                <a href="about.html" target="_self" class="about" id="about">About Me</a>
+                <a href="contact.html" target="_self" class="contact" id="contact">Contact</a>
+                <a href="project.html" target="_self" class="Project" id="Project">Projects</a>
+            </nav>
+        </div>
+        <div>
+            <div class="content">
+                <h1 class="main-heading-contact">Contact</h1>
+                <span class="heading-line"></span>
+                <p class="subh">GET IN TOUCH</p>
+                <p id="pra">We align leaders around a shared purpose<br> and srartegic story that catalyzes their<br>
+                    bussiness and brand to take action. </p>
+                <hr id="hr">
+                 <!-- form code -->
+                <div class="form-style">
+                    <form>
+                        <p class="form-heading">Contact Form</p>
+
+                        <label>Name</label><br>
+                        <input placeholder="Name" name="name" /><br>
+                        <label>Email</label><br>
+                        <input name="Email" placeholder="Email" /><br>
+                        <textarea name="Massage" placeholder="Massage"></textarea><br>
+
+                        <button name="Submit" class="button">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <div>
+                <iframe class="map" id="boxe"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29434.84889456907!2d77.69026461083985!3d22.752161899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c3754e3276c19%3A0x8633401ecef75d5c!2sMIC%20Institute%20Narmadapuram%20Hoshangabad%20MP%20461001!5e0!3m2!1sen!2sin!4v1724238636463!5m2!1sen!2sin"
+                    allowfullscreen="" loading="fast" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <hr>
+            <div class="contact-conection">
+                <a href="mailto:anushbhise29@gmail.com"><img src="./../assest/download (3).png" id="mail-icon"></a><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga possimus voluptatibus facere
+                    exercitationem voluptate doloremque quisquam eaque, enim cum nihil ex doloribus.</p>
+                <a href="mailto:anushbhise29@gmail.com"><img src="./../assest/download (2).png" id="mail-icon"></a><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga possimus voluptatibus facere
+                    exercitationem voluptate doloremque quisquam eaque, enim cum nihil ex doloribus.</p>
+                <a href=""><img src="./../assest/download (2).png" id=""></a><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga possimus voluptatibus facere
+                    exercitationem voluptate doloremque quisquam eaque, enim cum nihil ex doloribus.</p>
+
+            </div>
+           
+
+        </div>
+    </div>
+    <div class="footer">
+        <footer class="footer">
+            
+                <div>
+                    <p>Made with <i class="ph-fill ph-heart" style="color: #ff0000e8;"></i> by ANUSH BHISE</p>
+                </div>
+            
+        </footer>
+    </div>
+    <script>let isBlack = true; // Flag to keep track of the current border color
+
+        function toggleBorderColor2() {
+            const box = document.getElementById('box');
+            const boxe = document.getElementById('boxe');
+            // Toggle the border color based on the flag
+            if (isBlack) {
+                box.style.borderColor = 'black'; // Change to white
+            } else {
+                box.style.borderColor = 'white'; // Change to black
+            }
+            if (isBlack) {
+                boxe.style.borderColor = 'black'; // Change to white
+            } else {
+                boxe.style.borderColor = 'white'; // Change to black
+            }
+            // Update the flag for the next click
+            isBlack = !isBlack;
+        }
+        function my_Function() {
+            var element = document.body;
+            element.classList.toggle("dark-mode2");
+        }
+    </script>
+</body>
+
+</html>
