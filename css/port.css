@@ -3,17 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-.main-container{
+
+.main-container {
     height: 682px;
+    max-width: 100%;
+    max-height: 100%;
     width: 1210px;
-    margin-bottom: 50px;
-    border-radius: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 auto;
+    
 }
+
 .container2 {
-    max-width: 300px;
+    width: 300px;
+    max-width: 100%;
     height: 682px;
+
+    max-height: 100%;
     margin-top: 2px;
     float: left;
     border: 1px solid #009ffb;
@@ -21,14 +26,15 @@
     border-radius: 10px;
     background: rgb(22, 88, 180);
     background: linear-gradient(90deg, rgba(22, 88, 180, 1) 27%, rgba(9, 111, 121, 1) 87%);
- 
-  
+
+
 
 
 }
 
 .links {
     display: flex;
+    flex-wrap: wrap;
     margin-left: 8px;
 
 }
@@ -57,9 +63,11 @@ body {
     padding-top: 0;
     margin-bottom: 20px;
     margin-right: -1px;
-    margin-top: -1px;
+    margin-top: -4px;
     text-align: right;
     width: 400px;
+    max-height: 100%;                                                                      
+    max-width: 100%;
     border: 10px solid white;
     float: right;
     border-radius: 0 0 0 30px;
@@ -89,6 +97,8 @@ a {
     border-radius: 50%;
     height: 20px;
     width: 20px;
+    max-height: 100%;
+    max-width: 100%;
     cursor: pointer;
 
 
@@ -103,7 +113,7 @@ a {
 }
 
 .dark2 {
-    margin:0px 0px 1px 10px;
+    margin: 0px 0px 1px 10px;
 }
 
 .dark-icon2 {
@@ -111,6 +121,8 @@ a {
     border: 1px solid white;
     border-radius: 50%;
     height: 20px;
+    max-width: 100%;
+    max-height: 100%;
     width: 20px;
     cursor: pointer;
 
@@ -151,6 +163,7 @@ p {
 .information-card {
     border: 1px solid #009ffb;
     width: 855px;
+    max-width: 100%;
     float: right;
     margin-left: 10px;
     padding: auto 25px;
@@ -159,7 +172,8 @@ p {
     background: linear-gradient(90deg, rgba(22, 88, 180, 1) 27%, rgba(9, 111, 121, 1) 87%);
     margin-top: 0px;
     margin-right: 10px;
-    height: 685;
+    max-height: 100%;
+    height: 685px;
 
 }
 
@@ -177,6 +191,8 @@ p {
 
 .heading-style .heading-line {
     width: 70px;
+    max-width: 100%;
+    max-height: 100%;
     margin-left: 3px;
     height: 5px;
     border-radius: 5px;
@@ -234,6 +250,7 @@ h3.heading-style {
 
 .two-col-card {
     display: flex;
+
     gap: 10px;
     flex-wrap: wrap;
     margin-right: 8px;
@@ -242,17 +259,19 @@ h3.heading-style {
 .two-col-card .work-card {
     flex-grow: 1;
     width: calc(50% - 20px);
+    max-width: 100%;
 }
 
 /* contact page css */
 
 /* form css */
 .contact-contenair {
-  width: 1210px;
-  margin-bottom: 50px;
-  border-radius: 10px;
-  margin-left: 17px;
-  margin-right: 20px;
+    width: 1210px;
+    max-width: 100%;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    margin-left: 17px;
+    margin-right: 20px;
     background: rgb(22, 88, 180);
     background: linear-gradient(90deg, rgba(22, 88, 180, 1) 27%, rgba(9, 111, 121, 1) 87%);
 }
@@ -281,6 +300,9 @@ h3.heading-style {
 
 .heading-line {
     width: 88px;
+
+    max-width: 100%;
+    max-height: 100%;
     margin-left: 8px;
     height: 5px;
     margin-top: 20px;
@@ -296,6 +318,8 @@ h3.heading-style {
     width: 757px;
     height: 511px;
     margin-left: 0px;
+    max-width: 100%;
+    max-height: 100%;
     float: right;
     margin-top: 10px;
     margin-bottom: 0px;
@@ -307,11 +331,16 @@ h3.heading-style {
 
 hr {
     width: 1126px;
+    max-width: 100%;
+
     border-color: white;
     margin: 20px 20px 20px 20px;
 }
 
 #hr {
+
+    max-width: 100%;
+
     width: 390px;
     border-color: #ffffff;
     margin-left: 10px;
@@ -333,6 +362,8 @@ input {
     border: 1px solid #c9c4c4;
     width: 268px;
     height: 40px;
+    max-width: 100%;
+    max-height: 100%;
     padding: 10px 10px 10px 10px;
 }
 
@@ -345,6 +376,8 @@ textarea {
     margin-top: 20px;
     margin-left: 10px;
     width: 274px;
+    max-width: 100%;
+    max-height: 100%;
     height: 108px;
     border: 1px solid #c9c4c4;
     padding: 10px 10px 10px 10px;
@@ -352,6 +385,8 @@ textarea {
 
 button {
     width: 72px;
+    max-width: 100%;
+    max-height: 100%;
     height: 30px;
     border-radius: 30px;
     border: 1px solid #c9c4c4;
@@ -366,7 +401,9 @@ button {
     border-radius: 50%;
     height: 73px;
     width: 73px;
+    max-width: 100%;
 
+    max-height: 100%;
 }
 
 #mail-icon:hover {
@@ -379,20 +416,24 @@ button {
 
 /* footer css */
 
-.footer {
-margin-top: 20px;
-    align-self: center;
-    text-align: center;
+.footer_section{
+    margin-top: 20px;
+text-align: center;
+
+
     font-size: 16px;
-    color: black;
+    color: #000000;
 
 }
 
 .person {
     border: 1px transparent;
     border-radius: 50%;
+    
     height: 191px;
     width: 200px;
+    max-width: 100%;
+    max-height: 100%;
     margin-left: 42px;
     margin-top: 20px;
     margin-bottom: 31px;

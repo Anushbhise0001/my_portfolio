@@ -1,5 +1,6 @@
-
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -22,6 +23,8 @@ body {
   border-radius: 50%;
   height: 20px;
   width: 20px;
+  max-width: 100%;
+  max-height: 100%;
   cursor: pointer;
 
 
@@ -37,6 +40,7 @@ body {
 
 .main-body {
   width: 1210px;
+  max-width: 100%;
   margin-bottom: 50px;
   border-radius: 10px;
   margin-left: 20px;
@@ -69,6 +73,8 @@ h6 {
 
 .heading-style .heading-line {
   width: 70px;
+  max-width: 100%;
+  max-height: 100%;
   margin-left: 3px;
   height: 5px;
   border-radius: 5px;
@@ -89,6 +95,7 @@ h6 {
   margin-bottom: 20px;
   text-align: right;
   width: 400px;
+  max-width: 100%;
   border: 10px solid white;
   float: right;
   border-radius: 0 0 0 30px;
@@ -123,6 +130,8 @@ a {
   position: absolute;
   height: 620px;
   width: 6px;
+  max-height: 100%;
+  max-width: 100%;
   background-color: white;
   top: 0;
   bottom: 2;
@@ -136,6 +145,7 @@ a {
   position: relative;
   background-color: inherit;
   width: 50%;
+  max-width: 100%;
 }
 
 /* The circles on the timeline */
@@ -143,6 +153,8 @@ a {
   content: '';
   position: absolute;
   width: 25px;
+  max-width: 100%;
+  max-height: 100%;
   height: 25px;
   right: -17px;
   background-color: white;
@@ -180,6 +192,8 @@ a {
 .right::before {
   content: " ";
   height: 0;
+  max-height: 100%;
+  max-width: 100%;
   position: absolute;
   top: 22px;
   width: 0;
@@ -204,7 +218,7 @@ a {
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 100%  ) {
 
   /* Place the timelime to the left */
   .timeline::after {
@@ -237,12 +251,12 @@ a {
     left: 0%;
   }
 }
+
 .footer {
   margin-top: 20px;
-      align-self: center;
-      text-align: center;
-      font-size: 16px;
-      color: black;
-  
-  }
-  
+  align-self: center;
+  text-align: center;
+  font-size: 16px;
+  color: black;
+
+}
